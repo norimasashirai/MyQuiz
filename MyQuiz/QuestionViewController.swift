@@ -17,9 +17,9 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var answer1Button: UIButton!
     @IBOutlet weak var answer2Button: UIButton!
     @IBOutlet weak var answer3Button: UIButton!
-    @IBOutlet weak var answet4Button: UIButton!
+    @IBOutlet weak var answer4Button: UIButton!
         
-    @IBOutlet weak var correctImageview: UIImageView!
+    @IBOutlet weak var correctImageView: UIImageView!
     @IBOutlet weak var incorrectImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -78,21 +78,21 @@ class QuestionViewController: UIViewController {
     //アニメーション
     UIView.animate(withDuration: 2.0, animations:{
         //アルファ値を1.0に変化させる（初期値はStoryboardで0.0に設定済み）
-        self.correctImageView.alpha=1.0
+        self.correctImageView.alpha = 1.0
         }) { (Bool) in
             self.goNextQuestion()//アニメーション完了後に次の問題に進む
         }
     }
 
     //次の問題に不正解のアニメーション付きで遷移する
-    func goNextQuestionWithCorrectAnimation() {
+    func goNextQuestionWithIncorrectAnimation() {
         //不正解を伝える音を鳴らす
         AudioServicesPlayAlertSound(1006)
 
     //アニメーション
         UIView.animate(withDuration: 2.0,animations:{
             //アルファ値を1.0に変化させる（初期値はStoryboardで0.0に設定済み）
-            self.incorrectImageView.alpha=1.0
+            self.incorrectImageView.alpha = 1.0
         }) { (Bool) in
             self.goNextQuestion()//アニメーション完了後に次の問題に進む
     }
@@ -104,9 +104,7 @@ class QuestionViewController: UIViewController {
             //問題文がなければ結果画面へ遷移する
             //StoryboardのIdentifierに設定した値（result）を指定して
             //ViewControllerを生成する
-        if let resultViewController = storyboard?.instantiateViewController
-        （withIdentifier: "result")as?
-        ResultViewController {
+        if let resultViewController = storyboard?.instantiateViewController(withIdentifier: "result")as? ResultViewController {
             //StoryboardのSegueを利用しない明示的な画面遷移処理
             present(resultViewController, animated: true, completion: nil)
             }

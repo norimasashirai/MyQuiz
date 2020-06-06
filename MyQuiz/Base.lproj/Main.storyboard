@@ -23,7 +23,7 @@
                                     <segue destination="z3D-Ti-qX8" kind="presentation" id="TT0-ax-7lC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyQuiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-wA-Q1c">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyQuiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-wA-Q1c">
                                 <rect key="frame" x="141" y="123" width="133" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -35,7 +35,6 @@
                             <constraint firstItem="GRj-u6-n57" firstAttribute="top" secondItem="cLy-wA-Q1c" secondAttribute="bottom" constant="65" id="EZU-mB-sAA"/>
                             <constraint firstItem="cLy-wA-Q1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OMV-Ju-qwk"/>
                             <constraint firstItem="GRj-u6-n57" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="cCj-os-v2j"/>
-                            <constraint firstItem="cLy-wA-Q1c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="eFp-Yg-y54"/>
                             <constraint firstItem="cLy-wA-Q1c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="iEB-jl-aCs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,28 +52,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBY-wN-239">
-                                <rect key="frame" x="20" y="35" width="20.333333333333329" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corect" translatesAutoresizingMaskIntoConstraints="NO" id="6NF-Op-aXq">
-                                <rect key="frame" x="150.66666666666666" y="301.66666666666669" width="112.66666666666666" height="112.66666666666669"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="y5d-aY-W7N">
-                                <rect key="frame" x="158.33333333333334" y="309.33333333333331" width="97.333333333333343" height="97.333333333333314"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ヤフオク！にて過去最高額で落札された商品はなんでしょうか？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="14N-mQ-dNy">
-                                <rect key="frame" x="0.0" y="79.333333333333314" width="414" height="106"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="FBk-3u-P2r"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cRO-xr-5i7">
                                 <rect key="frame" x="0.0" y="202.33333333333331" width="414" height="513.66666666666674"/>
                                 <subviews>
@@ -111,7 +88,7 @@
                                             <action selector="tapAnswer3Button:" destination="z3D-Ti-qX8" eventType="touchUpInside" id="myL-NW-e8W"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVz-bk-UIm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVz-bk-UIm" userLabel="Answer4 Button">
                                         <rect key="frame" x="0.0" y="392.66666666666663" width="414" height="121"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -124,22 +101,42 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ヤフオク！にて過去最高額で落札された商品はなんでしょうか？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="14N-mQ-dNy">
+                                <rect key="frame" x="0.0" y="79.333333333333314" width="414" height="106"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="FBk-3u-P2r"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBY-wN-239">
+                                <rect key="frame" x="20" y="35" width="20.333333333333329" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corect" translatesAutoresizingMaskIntoConstraints="NO" id="FOi-eh-Geo">
+                                <rect key="frame" x="87" y="294" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="sV6-bN-I8l">
+                                <rect key="frame" x="87" y="294" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="14N-mQ-dNy" firstAttribute="leading" secondItem="gxg-Gt-Ccj" secondAttribute="leading" id="Gpx-pI-jC6"/>
                             <constraint firstItem="14N-mQ-dNy" firstAttribute="top" secondItem="gBY-wN-239" secondAttribute="bottom" constant="24" id="J12-iI-vfb"/>
-                            <constraint firstItem="y5d-aY-W7N" firstAttribute="centerY" secondItem="efw-hd-Hok" secondAttribute="centerY" id="M0K-TC-po9"/>
                             <constraint firstItem="14N-mQ-dNy" firstAttribute="centerX" secondItem="efw-hd-Hok" secondAttribute="centerX" id="Nmq-ay-QLe"/>
-                            <constraint firstItem="6NF-Op-aXq" firstAttribute="centerX" secondItem="efw-hd-Hok" secondAttribute="centerX" id="Pv0-pU-le2"/>
                             <constraint firstItem="14N-mQ-dNy" firstAttribute="trailing" secondItem="cRO-xr-5i7" secondAttribute="trailing" id="SDS-6Z-AiZ"/>
                             <constraint firstItem="14N-mQ-dNy" firstAttribute="leading" secondItem="cRO-xr-5i7" secondAttribute="leading" id="TkJ-Ex-EjD"/>
-                            <constraint firstItem="6NF-Op-aXq" firstAttribute="centerY" secondItem="efw-hd-Hok" secondAttribute="centerY" id="W9u-U0-u16"/>
                             <constraint firstItem="gBY-wN-239" firstAttribute="leading" secondItem="efw-hd-Hok" secondAttribute="leadingMargin" id="feY-Gb-3fJ"/>
                             <constraint firstItem="gBY-wN-239" firstAttribute="top" secondItem="gxg-Gt-Ccj" secondAttribute="top" constant="35" id="iaA-vg-UTG"/>
                             <constraint firstItem="cRO-xr-5i7" firstAttribute="top" secondItem="14N-mQ-dNy" secondAttribute="bottom" constant="17" id="mq7-qE-LDV"/>
                             <constraint firstItem="cRO-xr-5i7" firstAttribute="bottom" secondItem="gxg-Gt-Ccj" secondAttribute="bottom" id="o8P-fS-N7F"/>
-                            <constraint firstItem="y5d-aY-W7N" firstAttribute="centerX" secondItem="efw-hd-Hok" secondAttribute="centerX" id="wLH-jd-c28"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gxg-Gt-Ccj"/>
                     </view>
@@ -147,9 +144,9 @@
                         <outlet property="answer1Button" destination="7Os-Ws-7qL" id="84G-iw-GZb"/>
                         <outlet property="answer2Button" destination="piN-RK-lGl" id="Rn4-sg-0sK"/>
                         <outlet property="answer3Button" destination="nUz-R4-r9d" id="Nif-Ir-htf"/>
-                        <outlet property="answet4Button" destination="XVz-bk-UIm" id="wCg-e7-R8t"/>
-                        <outlet property="correctImageview" destination="6NF-Op-aXq" id="96V-iF-x7R"/>
-                        <outlet property="incorrectImageView" destination="y5d-aY-W7N" id="39D-WC-m3V"/>
+                        <outlet property="answer4Button" destination="XVz-bk-UIm" id="vt2-uc-bZZ"/>
+                        <outlet property="correctImageView" destination="FOi-eh-Geo" id="TSc-zq-dru"/>
+                        <outlet property="incorrectImageView" destination="sV6-bN-I8l" id="wAi-yL-bCt"/>
                         <outlet property="questionLabel" destination="gBY-wN-239" id="VB2-ma-LNa"/>
                         <outlet property="questionTextView" destination="14N-mQ-dNy" id="ajS-nk-ROp"/>
                     </connections>
@@ -219,7 +216,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="corect" width="112.5" height="112.5"/>
-        <image name="incorrect" width="97.5" height="97.5"/>
+        <image name="corect" width="600" height="600"/>
+        <image name="incorrect" width="654" height="635.5"/>
     </resources>
 </document>

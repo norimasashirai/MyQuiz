@@ -12,7 +12,7 @@ class QuestionData {
     //問題文
     var question: String
     //選択肢1
-    var answerl: String
+    var answer1: String
     //選択肢2
     var answer2: String
     //選択肢3
@@ -76,7 +76,7 @@ class QuestionDataManager {
             csvStringData.enumerateLines(invoking: { (line,stop) in
             //カンマ区切りで分割
             let questionSourceDataArray =
-            line.components(separatedBy:".")
+            line.components(separatedBy:",")
             //問題データを格納するオブジェクトを作成
             let questionData=QuestionData(questionSourceDataArray:questionSourceDataArray)
             //問題を追加

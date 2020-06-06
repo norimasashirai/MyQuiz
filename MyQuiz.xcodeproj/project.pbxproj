@@ -13,7 +13,7 @@
 		82D002322482F97D00888A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D002302482F97D00888A94 /* Main.storyboard */; };
 		82D002342482F97F00888A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D002332482F97F00888A94 /* Assets.xcassets */; };
 		82D002372482F97F00888A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D002352482F97F00888A94 /* LaunchScreen.storyboard */; };
-		82D0023F24831B4400888A94 /* question csv in Resources */ = {isa = PBXBuildFile; fileRef = 82D0023E24831B4400888A94 /* question csv */; };
+		82D0023F24831B4400888A94 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = 82D0023E24831B4400888A94 /* question.csv */; };
 		82D00241248320E600888A94 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D00240248320E600888A94 /* QuestionDataManager.swift */; };
 		82D0024524832F0A00888A94 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D0024424832F0A00888A94 /* StartViewController.swift */; };
 		82D00247248332FA00888A94 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D00246248332FA00888A94 /* QuestionViewController.swift */; };
@@ -30,7 +30,7 @@
 		82D002332482F97F00888A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D002362482F97F00888A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82D002382482F97F00888A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82D0023E24831B4400888A94 /* question csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "question csv"; sourceTree = "<group>"; };
+		82D0023E24831B4400888A94 /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 		82D00240248320E600888A94 /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 		82D0024424832F0A00888A94 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		82D00246248332FA00888A94 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 				82D00246248332FA00888A94 /* QuestionViewController.swift */,
 				82D00248248341CE00888A94 /* ResultViewController.swift */,
 				82D002302482F97D00888A94 /* Main.storyboard */,
-				82D0023E24831B4400888A94 /* question csv */,
+				82D0023E24831B4400888A94 /* question.csv */,
 				82D00240248320E600888A94 /* QuestionDataManager.swift */,
 				82D002332482F97F00888A94 /* Assets.xcassets */,
 				82D002352482F97F00888A94 /* LaunchScreen.storyboard */,
@@ -152,7 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82D0023F24831B4400888A94 /* question csv in Resources */,
+				82D0023F24831B4400888A94 /* question.csv in Resources */,
 				82D002372482F97F00888A94 /* LaunchScreen.storyboard in Resources */,
 				82D002342482F97F00888A94 /* Assets.xcassets in Resources */,
 				82D002322482F97D00888A94 /* Main.storyboard in Resources */,
