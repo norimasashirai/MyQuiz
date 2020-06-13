@@ -73,7 +73,16 @@ class QuestionViewController: UIViewController {
     //次の問題に正解のアニメーション付きで遷移する
     func goNextQuestionWithCorrectAnimation() {
     //正解を伝える音を鳴らす
-    AudioServicesPlayAlertSound(1025)
+    
+        let soundUrl = Bundle.main.url(forResource:"cyub",
+               withExtension:"mp3")
+               //サウンドIDを登録するための変数を用意
+               var soundId: SystemSoundID=0
+               //サウンドファイルを登録してサウンドIDを取得
+               AudioServicesCreateSystemSoundID(soundUrl!as CFURL,&soundId)
+               //取得したサウンドIDを使用してサウンドを鳴らす
+        AudioServicesPlaySystemSoundWithCompletion(soundId) {}
+               //ここにはサウンドが鳴り終わったあとに呼ばれる処理を記述する
 
     //アニメーション
     UIView.animate(withDuration: 2.0, animations:{
@@ -87,7 +96,16 @@ class QuestionViewController: UIViewController {
     //次の問題に不正解のアニメーション付きで遷移する
     func goNextQuestionWithIncorrectAnimation() {
         //不正解を伝える音を鳴らす
-        AudioServicesPlayAlertSound(1006)
+        
+        let soundUrl = Bundle.main.url(forResource:"spaceship01",
+                      withExtension:"mp3")
+                      //サウンドIDを登録するための変数を用意
+                      var soundId: SystemSoundID=0
+                      //サウンドファイルを登録してサウンドIDを取得
+                      AudioServicesCreateSystemSoundID(soundUrl!as CFURL,&soundId)
+                      //取得したサウンドIDを使用してサウンドを鳴らす
+               AudioServicesPlaySystemSoundWithCompletion(soundId) {}
+                      //ここにはサウンドが鳴り終わったあとに呼ばれる処理を記述する
 
     //アニメーション
         UIView.animate(withDuration: 2.0,animations:{

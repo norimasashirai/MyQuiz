@@ -19,6 +19,9 @@
 		82D00247248332FA00888A94 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D00246248332FA00888A94 /* QuestionViewController.swift */; };
 		82D00249248341CE00888A94 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D00248248341CE00888A94 /* ResultViewController.swift */; };
 		82D0024C2483473C00888A94 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0024B2483473C00888A94 /* AudioToolbox.framework */; };
+		82F01B382492049400B17619 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0024B2483473C00888A94 /* AudioToolbox.framework */; };
+		82F01B3A2492063200B17619 /* cyub.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82F01B392492063200B17619 /* cyub.mp3 */; };
+		82F01B3C24920AAD00B17619 /* spaceship01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82F01B3B24920AAD00B17619 /* spaceship01.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,8 @@
 		82D00246248332FA00888A94 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		82D00248248341CE00888A94 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		82D0024B2483473C00888A94 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		82F01B392492063200B17619 /* cyub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cyub.mp3; sourceTree = "<group>"; };
+		82F01B3B24920AAD00B17619 /* spaceship01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spaceship01.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D0024C2483473C00888A94 /* AudioToolbox.framework in Frameworks */,
+				82F01B382492049400B17619 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +76,8 @@
 		82D002292482F97D00888A94 /* MyQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				82F01B3B24920AAD00B17619 /* spaceship01.mp3 */,
+				82F01B392492063200B17619 /* cyub.mp3 */,
 				82D0022A2482F97D00888A94 /* AppDelegate.swift */,
 				82D0022C2482F97D00888A94 /* SceneDelegate.swift */,
 				82D0022E2482F97D00888A94 /* ViewController.swift */,
@@ -152,7 +160,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F01B3C24920AAD00B17619 /* spaceship01.mp3 in Resources */,
 				82D0023F24831B4400888A94 /* question.csv in Resources */,
+				82F01B3A2492063200B17619 /* cyub.mp3 in Resources */,
 				82D002372482F97F00888A94 /* LaunchScreen.storyboard in Resources */,
 				82D002342482F97F00888A94 /* Assets.xcassets in Resources */,
 				82D002322482F97D00888A94 /* Main.storyboard in Resources */,
