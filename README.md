@@ -6,19 +6,10 @@ Overview
 　4-choice quiz.
 ## Demo
  ![MyQuiz](https://user-images.githubusercontent.com/66149009/86969499-dd519800-c1a8-11ea-9a49-70c29c9e2671.gif)
-## Requirement
 
 ## Usage　
 　Even in my spare time！
 
-## Install
-
-## Contribution
-
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
-
 ## Author
 
-[tcnksm](https://github.com/tcnksm)
+[norimasashirai](https://github.com/norimasashirai
